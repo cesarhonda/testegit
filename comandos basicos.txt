@@ -1,0 +1,20 @@
+git add *
+git commit -m "descrição do commit"
+git log
+git log --decorate
+git log --author = "Ces"
+git shortlog
+git shortlog -sn (quantidade e nome)
+git log --graph (forma "gráfica")
+git show <número do hash do commit>
+git diff (exibe as modificações feitas)
+git diff --name-only (somente o nome dos arquivos modificados)
+git diff -am "mensagem" (dá o stage e o commit)
+git checkout <nome do arquivo> (volta o arquivo antes da edição e antes do stage)
+git reset HEAD <nome do arquivo> (remove do stage mas não volta a modificação, tem que dar o checkout)
+git reset --soft <numero hash anterior> (cancela o commit e o arquivo fica staged)
+git reset --mixed <numero hash anterior> (cancela o commit e o arquivo fica modified)
+git reset --hard <numero hash anterior> (cancela tudo)
+(se der reset hard pode mudar o historico dos commits. não recomendável se deu aprovação do pull request)
+git remote add origin https://github.com/cesarhonda/fiap11net.git
+git push -u origin master 
